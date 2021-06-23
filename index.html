@@ -27,10 +27,9 @@
 <body>
     <div class="container">
         <h1 align="center"> ToDo List </h1>
-
         <div class="row">
             <!--INPUT BOX-->
-            <div class="col-md-8">
+            <div class="col-md-7">
                 <div class="form-group">
                     <label for="inpNewTask" class="form-label">New Task</label>
                     <input type="text" class="form-control" id="inpNewTask" aria-describedby="newTaskHelp"
@@ -39,21 +38,24 @@
                 </div>
             </div>
             <!--BUTTONS-->
-            <div class="col-md-4">
-                <div class="row">
-                    <button class="btn btn-success col m-3" id="btnadd">
+            <div class="col-md-5 row p-1" align="center">
+                <div class="col-6 col-sm-3 col-md-6 p-1">
+                    <button class="btn btn-success col-10" id="btnadd">
                         <i class="fas fa-plus"></i> ADD
                     </button>
-                    <button class="btn btn-danger col m-3" id="btnclear">
+                </div>
+                <div class="col-6 col-sm-3 col-md-6 p-1">
+                    <button class="btn btn-warning col-10" id="btnclear">
                         <i class="fas fa-backspace"></i> CLEAR
                     </button>
                 </div>
-                
-                <div class="row">
-                    <button class="btn btn-info col m-3" id="btnsort">
+                <div class="col-6 col-sm-3 col-md-6 p-1">
+                    <button class="btn btn-info col-10" id="btnsort">
                         <i class="fas fa-sort-amount-down"></i> SORT
                     </button>
-                    <button class="btn btn-warning col m-3" id="btndelete">
+                </div>
+                <div class="col-6 col-sm-3 col-md-6 p-1">
+                    <button class="btn btn-danger col-10" id="btnreset">
                         <i class="fas fa-trash-alt"></i> RESET
                     </button>
                 </div>

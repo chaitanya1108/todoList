@@ -2,6 +2,8 @@ let ulTasks=$('#ulTasks')
 let inpNewTask=$('#inpNewTask')
 let btnadd=$('#btnadd')
 let btnclear=$('#btnclear')
+let btnsort=$('#btnsort')
+let btnreset=$('#btnreset')
 
 function additem(){
     let listitem= $('<li>',{ //to create an element u dont need a closing tag
@@ -24,4 +26,5 @@ inpNewTask.keypress((e)=>{
 btnadd.click(()=>{
     additem()
 })
+
 btnclear.click(()=>inpNewTask.val(""))
