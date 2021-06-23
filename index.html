@@ -17,6 +17,8 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.js"></script>
+    <!--adding all icons from fontawesome-->
     <script defer src="script.js"></script>
     <!--only works on modern browsers, defer makes so that the script runs only after the page is loaded-->
     <link rel="stylesheet" href="style.css">
@@ -25,9 +27,10 @@
 <body>
     <div class="container">
         <h1 align="center"> ToDo List </h1>
-        <!--INPUT BOX-->
+
         <div class="row">
-            <div class="col">
+            <!--INPUT BOX-->
+            <div class="col-md-8">
                 <div class="form-group">
                     <label for="inpNewTask" class="form-label">New Task</label>
                     <input type="text" class="form-control" id="inpNewTask" aria-describedby="newTaskHelp"
@@ -35,20 +38,31 @@
                     <div id="newTaskHelp" class="form-text">A short one line description of the task</div>
                 </div>
             </div>
-        </div>
-        <!--BUTTONS-->
-        <div class="row px-4">
-            <button class="btn btn-success col m-3" id="btnadd">
-                ADD
-            </button>
-            <button class="btn btn-danger col m-3" id="btnclear">
-                CLEAR
-            </button>
+            <!--BUTTONS-->
+            <div class="col-md-4">
+                <div class="row">
+                    <button class="btn btn-success col m-3" id="btnadd">
+                        <i class="fas fa-plus"></i> ADD
+                    </button>
+                    <button class="btn btn-danger col m-3" id="btnclear">
+                        <i class="fas fa-backspace"></i> CLEAR
+                    </button>
+                </div>
+                
+                <div class="row">
+                    <button class="btn btn-info col m-3" id="btnsort">
+                        <i class="fas fa-sort-amount-down"></i> SORT
+                    </button>
+                    <button class="btn btn-warning col m-3" id="btndelete">
+                        <i class="fas fa-trash-alt"></i> RESET
+                    </button>
+                </div>
+            </div>
         </div>
         <!--TASKS-->
         <div class="row px-1">
             <ul class="list-group" id="ulTasks">
-                
+
             </ul>
         </div>
     </div>
