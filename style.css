@@ -1,0 +1,4 @@
+#ulTasks li.done { /*using done instead of disabled as done can be undone if clicked again*/
+    color: #6c757d;
+    text-decoration: line-through;
+}
